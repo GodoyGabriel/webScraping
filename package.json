@@ -1,0 +1,22 @@
+{
+  "name": "webscraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GodoyGabriel/webScraping.git"
+  },
+  "author": "Godoy Gabriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GodoyGabriel/webScraping/issues"
+  },
+  "homepage": "https://github.com/GodoyGabriel/webScraping#readme",
+  "dependencies": {
+    "puppeteer": "^8.0.0"
+  }
+}
