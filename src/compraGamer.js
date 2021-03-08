@@ -15,7 +15,7 @@ const puppeteer = require("puppeteer");
   // . clase
   await page.click("#botonBusqueda");
   await page.waitForSelector(".contenidoPrincipal");
-  await page.screenshot({ path: "test.jpg" });
+  await page.screenshot({ path: "./captures/compraGamer.jpg" });
   const products = await page.evaluate(() => {
     const elementToFind = 'div[class="contenidoPrincipal"]';
     const elements = document.querySelectorAll(`${elementToFind}`);

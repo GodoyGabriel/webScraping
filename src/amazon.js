@@ -5,19 +5,19 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
 
   await page.goto('http://www.amazon.es');
-  await page.screenshot({path: 'amazon1.jpg'});
+  await page.screenshot({path: './captures/amazon1.jpg'});
 
   // # id
   await page.type('#twotabsearchtextbox', 'libros de javascript');
 
-  await page.screenshot({path: 'amazon2.jpg'});
+  await page.screenshot({path: './captures/amazon2.jpg'});
 
   // . clase
   await page.click('.nav-search-submit input');
   // Es para esperar el selector, va entre [] porque es sobre un atributo
   await page.waitForSelector('[data-component-type=s-search-result]');
   await page.waitForTimeout(2000);
-  await page.screenshot({path: 'amazon3.jpg'});
+  await page.screenshot({path: './captures/amazon3.jpg'});
 
   const links = await page.evaluate(() => {
     const elements = document.querySelectorAll('[data-component-type=s-search-result] h2 a');
